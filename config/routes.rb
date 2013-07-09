@@ -1,4 +1,7 @@
 Resume::Application.routes.draw do
+  get "users/new"
+  match '/' => 'pages#home'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

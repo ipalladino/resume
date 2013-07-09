@@ -1,0 +1,126 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#matrix {
+    width:400px;
+    margin-top:20px;
+}
+
+#matrix img {
+    height:30px;
+}
+
+.logo {
+    display:block;
+    position:relative;
+    float:left;
+    height:30px;
+    width:20%;
+}
+.exp {
+    display:block;
+    position:relative;
+    float:left;
+    width:80%;
+    height:30px;
+}
+
+#matrix div {
+    border-radius:5px;
+    -webkit-transition: width 0.3s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+         -moz-transition: width 0.3s ease-out;  /* Firefox 4-15 */
+           -o-transition: width 0.3s ease-out;  /* Opera 10.50–12.00 */
+              transition: width 0.3s ease-out;
+}
+
+#matrix li {
+    list-style-type:none;
+    display:inline-block;
+}
+
+.experience {
+    height:30px;
+}
+
+#python img {
+    position:relative;
+    left: 0px;
+}
+#git img {
+    position:relative;
+    left: -10px;
+}
+#javascript img {
+    position:relative;
+    left:0px;
+}
+
+#experience-git {
+    display:block;
+    position:relative;
+    background-color:#F64E19;
+    width:100%;
+}
+
+#experience-python {
+    display:block;
+    position:relative;
+    background-color:#336EA1;
+    width:60%;
+}
+
+#experience-javascript {
+    display:block;
+    position:relative;
+    background-color:#F1DC3F;
+    width:40%;
+}
+
+.focus {
+    color:green;
+}
+
+.matrix-line {
+    height:50px;
+}
+
+/***
+JOB SLIDER
+***/
+
+#jobslider {
+    height:200px;
+    background:gray;
+    width:600px;
+    margin:0 auto;
+}
+
+.jobslider-section {
+    float:left;
+    height:200px;
+}
+#jobslider-content {
+    float:left;
+    width:400px;
+    overflow:hidden;
+}
+
+.arrow {
+    text-align:center;
+    width:100px;
+}
+
+#slides-container {
+    position:relative;
+    width:10000px;
+    -webkit-transition: left 0.3s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+         -moz-transition: left 0.3s ease-out;  /* Firefox 4-15 */
+           -o-transition: left 0.3s ease-out;  /* Opera 10.50–12.00 */
+              transition: left 0.3s ease-out;
+}
+.slide {
+    width:400px;
+    height:200px;
+    float:left;
+}
