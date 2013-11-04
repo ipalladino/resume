@@ -38,12 +38,29 @@ Resume.JobsSlider = Backbone.View.extend({
         if(this.get("visibleIndex") > 0) {
             this.set("visibleIndex", this.get("visibleIndex")-1)
         }
+        this.updateColors();
     },
     right : function () {
-        console.log("JobSlider.right");    
-        if(this.get("visibleIndex") < $(this.el).find("#slides-container div").length - 1) {
+        console.log("JobSlider.right, length: " + $("#slides-container .slide").length);
+        if(this.get("visibleIndex") < $(this.el).find("#slides-container .slide").length - 1) {
             this.set("visibleIndex", this.get("visibleIndex")+1)
         }
+        this.updateColors();
+    },
+    
+    updateColors : function () {
+        if(this.get("visibleIndex") < $("#slides-container .slide").length-1) {
+            $(".icon-arrow_right").attr("style", "opacity:1;");
+        } else {
+            $(".icon-arrow_right").attr("style", "opacity:0;");
+        }
+        
+        if(this.get("visibleIndex") > 0) {
+            $(".icon-arrow_left").attr("style", "opacity:1;");
+        } else {
+            $(".icon-arrow_left").attr("style", "opacity:0;");
+        }
+        
     },
 
     render : function(){
@@ -51,11 +68,12 @@ Resume.JobsSlider = Backbone.View.extend({
         this.setElement("#jobslider");
         var html = JST[this.template]();
         $(this.el).html(html);
+        this.updateColors();
     },
     
     onVisibleIndexChange : function () {
         console.log("Resume.onVisibleIndexChange");
-        $("#slides-container").css({"left":String(-400*this.get("visibleIndex"))+"px"});
+        $(".slide:eq(0)").css({"margin-left":String(-15*this.get("visibleIndex"))+"%"});
          
     },
 

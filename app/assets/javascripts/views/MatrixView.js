@@ -34,6 +34,15 @@ Resume.MatrixView = Backbone.View.extend({
     updateWidths : function (e) {
         console.log(e);
         console.log($(e.target).index());
+        
+        $(".focus").removeClass("focus");
+        $(e.target).addClass("focus");
+        
+        $(this.el).find("#experience-css3").css({"width" : this.model.get("css3")[$(e.target).index()]+"%"});
+        $(this.el).find("#experience-html5").css({"width" : this.model.get("html5")[$(e.target).index()]+"%"});
+        $(this.el).find("#experience-as3").css({"width" : this.model.get("as3")[$(e.target).index()]+"%"});
+        $(this.el).find("#experience-php").css({"width" : this.model.get("php")[$(e.target).index()]+"%"});
+        $(this.el).find("#experience-ruby").css({"width" : this.model.get("ruby")[$(e.target).index()]+"%"});
         $(this.el).find("#experience-git").css({"width" : this.model.get("git")[$(e.target).index()]+"%"});
         $(this.el).find("#experience-python").css({"width" : this.model.get("python")[$(e.target).index()]+"%"});
         $(this.el).find("#experience-javascript").css({"width" : this.model.get("javascript")[$(e.target).index()]+"%"});
