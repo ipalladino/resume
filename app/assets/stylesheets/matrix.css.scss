@@ -1,0 +1,140 @@
+#damatrix {
+    width:1020px;
+    margin:20px auto;
+    height:635px;
+}
+
+#matrix {
+    width:500px;
+    position:relative;
+    float:left;
+}
+#matrix-details {
+    margin-left:20px;
+    position:relative;
+    width:500px;
+    float:left;
+}
+
+$lineHeight:60px;
+
+#matrix img {
+    height:$lineHeight;
+    -webkit-box-shadow: 4px 0px 16px -1px rgb(0, 0, 0);
+    box-shadow: 4px 0px 16px -1px rgb(0, 0, 0);
+}
+
+.logo {
+    display:block;
+    position:relative;
+    float:left;
+    height:$lineHeight;
+    width:20%;
+}
+.exp {
+    display:block;
+    position:relative;
+    float:left;
+    width:80%;
+    height:$lineHeight;
+}
+
+#matrix div {
+    border-radius:5px;
+    -webkit-transition: width 0.3s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+         -moz-transition: width 0.3s ease-out;  /* Firefox 4-15 */
+           -o-transition: width 0.3s ease-out;  /* Opera 10.50–12.00 */
+              transition: width 0.3s ease-out;
+}
+
+#matrix li {
+    list-style-type:none;
+    display:inline-block;
+}
+
+.experience {
+    top:10px;
+    position:relative;
+    height:30px;
+}
+
+.logo img {
+    position:relative;
+    left: 0px;
+}
+
+#experience-git {
+    display:block;
+    position:relative;
+    background-color:#F64E19;
+    width:100%;
+}
+
+#experience-python {
+    display:block;
+    position:relative;
+    background-color:#336EA1;
+    width:60%;
+}
+
+#experience-javascript {
+    display:block;
+    position:relative;
+    background-color:#F1DC3F;
+    width:100%;
+}
+
+#experience-html5 {
+    display:block;
+    position:relative;
+    background-color:#F36717;
+    width:100%;
+}
+
+#experience-css3 {
+    display:block;
+    position:relative;
+    background-color:#31A0DB;
+    width:100%;
+}
+
+#experience-as3 {
+    display:block;
+    position:relative;
+    background-color:#563039;
+    width:60%;
+}
+
+#experience-php {
+    display:block;
+    position:relative;
+    background-color:#777AB6;
+    width:30%;
+}
+
+#experience-ruby {
+    display:block;
+    position:relative;
+    background-color:#B50A00;
+    width:100%;
+}
+
+.focus {
+    color:#7EB5D6;
+    font-weight:bold;
+    text-decoration:underline;
+}
+
+.matrix-line {
+    height:70px;
+}
+
+#matrix ul {
+    margin-left:0;
+    font-size:25px;
+    cursor: hand; cursor: pointer;
+}
+#epochs {
+    margin-top:10px;
+    
+}
